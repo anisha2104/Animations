@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes changeShape{
+from{
+transform:translateY(0);
+}
+25%{
+transform:translateY(-50px);
+}
+50%{
+transform:translateY(0);
+}
+75%{
+transform:translateY(-25px);
+}
+to{
+transform:translateY(0);
+}
+}
+div{
+background-color:lightgreen;
+height:100px;
+width:100px;
+position:absolute;
+top:20%;
+left:20%;
+
+}
+div:hover{
+    animation:changeShape 1s ease-in-out alternate;
+}
+</style>
+</head>
+<body>
+    <p>Hover over the box.</p>
+<div></div>
+
+</body>
+</html>

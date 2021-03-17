@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes changeShape{
+from{
+border-radius:0%;
+}
+25%{
+border-radius:12.5%;
+}
+50%{
+border-radius:25%;
+}
+75%{
+border-radius:37.5%;
+}
+to{
+border-radius:50%;
+}
+}
+div{
+background-color:lightgreen;
+height:100px;
+width:100px;
+position:absolute;
+top:20%;
+left:20%;
+animation:changeShape 1s ease-in-out infinite alternate;
+}
+
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

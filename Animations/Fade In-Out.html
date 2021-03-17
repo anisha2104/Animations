@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes changeShape{
+from{
+opacity:1;
+transform:opacity 1s linear;
+}
+
+to{
+opacity:0;
+transform:opacity 1s linear;
+}
+}
+div{
+background-color:lightblue;
+border:2px black solid;
+height:40px;
+width:90px;
+position:absolute;
+top:20%;
+left:20%;
+
+}
+
+div:hover{
+animation:changeShape 1s ease-in-out infinite alternate;
+}
+
+</style>
+</head>
+<body>
+
+<div><center>Animation Fade In-Out</center></div>
+
+</body>
+</html>

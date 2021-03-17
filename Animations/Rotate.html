@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes changeShape{
+from{
+transform:rotate(120deg);
+}
+
+50%{
+transform:rotate(-120deg);
+}
+
+
+
+to{
+transform:rotate(120deg);
+}
+}
+div{
+background-color:lightgreen;
+height:100px;
+width:100px;
+position:absolute;
+top:20%;
+left:20%;
+transform:rotate(120deg);
+}
+
+div:hover{
+animation:changeShape 1s ease-in-out infinite alternate;
+}
+
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
